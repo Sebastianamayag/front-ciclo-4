@@ -8,8 +8,8 @@
                   <h1> Mas información</h1>
 
                    <p> En nuestra librería conocemos la magia que podemos experimentar <br>
-                     a través de un buen libro. Por esto, los invitamos a que ingresen a <br>
-                     maravilloso mundo de la literatura y la poesía. </p>
+                     a través de un buen libro. Los invitamos a que ingresen al <br>
+                     maravilloso mundo de la literatura y la poesía a través de nuestros <br> productos.</p>
                    
                   </div>
 
@@ -88,7 +88,9 @@
     position:fixed;
     bottom:0;
     clear:both;
-    height:300px;
+    height: 20%;
+    padding: 0;
+    margin: 0;
 
     
    
@@ -99,9 +101,9 @@
     
     .container-footer-all {
         
-        max-width: 1800px;
+        max-width: 100%;
         margin: 20px;
-        padding: 15px;
+        padding: 5px;
         
         
         
@@ -115,7 +117,7 @@
     }
 
     .colum1 {
-      max-width: 600px;
+      max-width: 33%;
       font-size: 300px;
       
     }
@@ -126,7 +128,7 @@
     }
 
     p {
-      font-size: 14px;
+      font-size: 16px;
       color: #c7c7c7;
       margin-top: 20px;
       text-align: justify;
@@ -134,7 +136,7 @@
     }
    
    .colum2{
-     max-width: 600px;
+     max-width: 33%;
      font-size: 300px;
    }
 
@@ -157,7 +159,7 @@
       font-size: 12px;
     }
   .colum3{
-    max-width: 600px;
+    max-width: 33%;
     font-size: 300px;
 
 
