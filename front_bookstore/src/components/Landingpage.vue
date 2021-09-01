@@ -1,139 +1,101 @@
 <template>
-    <div class="home-content">
-        <div class="container">
-            <div class="mb-10">
-                <h1>Nuestros Productos</h1>
-                <h3></h3>
+  <div >
+        <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.0-beta1/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-giJF6kkoqNQ00vy+HMDP7azOuL0xtbfIcaT9wjKHr8RbDVddVHyTfAAsrekwKmP1" crossorigin="anonymous">
+        <link rel="stylesheet">
+        <div class="row no-gutters">
+          <div class="col-md-6 no-gutters">
+            <div class="leftside">          
             </div>
-            <div class="row justify-content-center">
-                <div class="col-12 px-0">   
-                    <div class="row">
-                        <div class="col-12 col-sm-6 col-md-4 px-2">
-                            <a href="/coffee">
-                                <b-card
-                                title="Café"
-                                :img-src="baseURL+'images/producto-cafe/finca-zulia/A/zulia-a1.png'"
-                                img-alt="La Romeral"
-                                img-bottom
-                                tag="article"
-                                style="max-width: 20rem;"
-                                class="mb-2 border-0"
-                                >
-                                </b-card>
-                            </a>
-
-                        </div>
-                        <div class="col-12 col-sm-6 col-md-4 px-2">
-                            <a href="/equipment">    
-                                <b-card
-                                title="Equipos"
-                                :img-src="baseURL+'images/grinders/vulcano/Vulcano-t.png'"
-                                img-alt="La Zulia"
-                                img-bottom
-                                tag="article"
-                                style="max-width: 20rem;"
-                                class="mb-2 border-0"
-                                >
-                                </b-card>
-                            </a>
-                        </div>
-                        <div class="col-12 col-sm-6 col-md-4 px-2">
-                            <a href="/related">    
-                                <b-card
-                                title="Derivados"
-                                :img-src="baseURL+'images/merendar/Pan.jpg'"
-                                img-alt="Sueño verde"
-                                img-bottom
-                                tag="article"
-                                style="max-width: 20rem;"
-                                class="mb-2 border-0"
-                                >
-                                </b-card>
-                            </a>
-                        </div>
-                    </div>
+          </div>
+          <div class="col-md-6 no-gutters">
+            <div class="rightside">   
+               <div class="Title"><h1>Bienvenido</h1></div>         
+              <div class="contenedor">
+                <div >
+                  <button class="invert2" type="button" id="signIn" v-on:click="SignUser">Consultar</button>
                 </div>
+                <div >
+                  <button class="invert2" type="button" id="signIn" v-on:click="RegisterUser">Registrar</button></div>
+              </div>
             </div>
+          </div>
         </div>
-    </div>
+          
+        
 
+  </div>
 </template>
 
 <script>
-//import baseUrl from '../shared/baseURL'
-//import axios from 'axios';
 
-/*export default {
-    name: 'Home',
-    data: function () {
-        return {
-            msg: 'Welcome to Your Vue.js App',
-            baseURL:''
-        }
-    },
-    created: function(){
-        let baseURL= baseUrl.baseURL
-        let self = this
-        self.baseURL= baseURL
-    }
-}*/
 </script>
-
-<!-- Add "scoped" attribute to limit CSS to this component only -->
-<style scoped>
-.mb-10, .col-12{
-    text-align: center;
-}
-
-.home-content{
-    margin-top: 10px;
-    margin-bottom: 4%;
-}
-.card-img-bottom{
-    border-radius: 20px;
-    margin-bottom: 10px;
-    max-height: 214px;
-    border: 1px solid rgba(0,0,0,.125);
-    cursor: pointer;
-}
-
-.card-img-bottom:hover {
-  color: #D70021;
-  background-color: white;
-  cursor: pointer;
-  border: 2px solid  #D70021;
-  width:99%;
-}
-
-.card{
-    margin: auto;
-}
-h1, h2 {
-  font-weight: bold;
-  font-size: 2rem;
-}
-h3{
-    font-weight: normal;
-    font-size: 1.5rem;
-}
-ul {
-  list-style-type: none;
-  padding: 0;
-}
-li {
-  display: inline-block;
-  margin: 0 10px;
-}
-a {
-  color: inherit;
-  text-decoration: none; 
-
-}
-
-@media only screen and (max-width: 993px) {
-  .card-img-bottom{
-    max-height: 157px;
-    width:100%;
+<style >
+  .Title{
+        font-family: 'Times New Roman';
+        color: #000000;
+        font-size: 2rem;
+        font-weight: bold;
+        display: block;
+        margin-top: 40%;
   }
-}
+  .leftside,.rightside{
+    height: 80vh;
+    width: 100%;
+  }
+
+  @media screen and (min-width: 768px) {
+    .leftside,.rightside{
+      height: 100vh;
+    }
+  }
+  .leftside{
+    background-color:  #f5c313 ;
+    align-self: center;
+    align-items: center;
+    background-repeat: no-repeat;
+    background-size: 500px 500px;
+    background-position: center;
+  }
+
+  .rightside{
+    background-color: #ffffff;
+    align-items: center;
+    align-self: center;
+    justify-content: center;
+    position: center;
+    object-position: center;
+    
+  }
+  .contenedor{
+    height: 80%;
+    width: 100%;
+  position: center;
+  justify-content: center;
+    
+  }
+  .contenedor2{
+  position: absolute;
+  top: 50%;
+  -ms-transform: translateY(-50%);
+  transform: translateY(-50%);
+  align-self: center;
+  align-items: center;
+  text-align: center;
+  }
+
+  button.invert2 {
+        border-radius: 20px;
+        border: 1px solid #082e55;
+        background-color: #082e55;
+        color: #fff;
+        font-size: 1rem;
+        font-weight: bold;
+        padding: 10px 40px;
+        letter-spacing: 1px;
+        text-transform: uppercase;
+        cursor: pointer;
+        transition: transform .1s ease-in;
+        margin-bottom: 5%;
+        margin-top: 5%;
+    }
 </style>
