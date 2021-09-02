@@ -56,7 +56,7 @@ export default {
   font-family: Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
   align-content: center;
 }
-.header{
+.header1{
   font: 1em OCR A Extended;
   margin: 0%;
   padding: 0;
